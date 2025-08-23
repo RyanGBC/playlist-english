@@ -118,6 +118,14 @@ button:hover {
     font-size: 0.9rem;
     padding: 9px 15px;
   }
+	
+  #playlist {
+  list-style: none;
+  padding: 0;
+  width: 30%;
+  margin: 20px auto;
+  }
+
 }
 
 /* 📱 Responsividade - até 480px */
