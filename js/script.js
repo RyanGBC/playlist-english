@@ -2,7 +2,8 @@
 const tracks = [
   { name: "Audio Army", file: "audios/1_Jack Hannaford Natalie Complete Audio.mp3" },
   { name: "Audio Endless tale", file: "audios/2_The Endless Tale Natalie Complete Audio.mp3" },
-  { name: "Audio Beanstalk", file: "audios/3_Jack and the Beanstalk Natalie Complete Audio.mp3" }
+  { name: "Audio Beanstalk", file: "audios/3_Jack and the Beanstalk Natalie Complete Audio.mp3" },
+  {name: "Audio The boy flew too high", file: "audios/4_The Boy who Flew too High Natalie Complete Audio.mp3"}
 ];
 
 const playlist = document.getElementById("playlist");
