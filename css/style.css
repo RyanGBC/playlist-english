@@ -100,6 +100,12 @@ button:hover {
   background: #1e88e5;
   transform: translateY(-2px);
 }
+#textlist li.active {
+  color: #0c57fa;
+  font-weight: bold;
+  background: #eef3ff;
+}
+
 
 /* 📱 Responsividade - até 600px */
 @media (max-width: 600px) {
@@ -120,12 +126,24 @@ button:hover {
   }
 	
   #playlist {
-  list-style: none;
-  padding: 0;
-  width: 75%;
-  margin: 20px auto;
+    list-style: none;
+    padding: 0;
+    width: 75%;
+    margin: 20px auto;
   }
 
+  #textlist li.active {
+    color: #0c57fa;
+    font-weight: bold;
+    background: #eef3ff;
+  }
+
+  /* 🔹 Texto rolável no mobile */
+  .txt {
+    max-height: 40vh;   /* ocupa até 40% da tela */
+    overflow-y: auto;   /* scroll só no texto */
+    padding: 10px;
+  }
 }
 
 /* 📱 Responsividade - até 480px */
@@ -140,10 +158,10 @@ button:hover {
   }
 
   #playlist {
-  list-style: none;
-  padding: 0;
-  width: 75%;
-  margin: 20px auto;
+    list-style: none;
+    padding: 0;
+    width: 75%;
+    margin: 20px auto;
   }
 
   button {
@@ -151,4 +169,18 @@ button:hover {
     font-size: 0.85rem;
     padding: 8px 14px;
   }
+
+  #textlist li.active {
+    color: #0c57fa;
+    font-weight: bold;
+    background: #eef3ff;
+  }
+
+  /*  Texto rolável no mobile menor */
+  .txt {
+    max-height: 45vh;   /* um pouco mais de espaço em telas pequenas */
+    overflow-y: auto;
+    padding: 8px;
+  }
 }
+
