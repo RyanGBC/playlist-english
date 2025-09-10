@@ -4,7 +4,7 @@ const tracks = [
   { name: "Audio Endless tale", file: "audios/2_The Endless Tale Natalie Complete Audio.mp3" },
   { name: "Audio Beanstalk", file: "audios/3_Jack and the Beanstalk Natalie Complete Audio.mp3" },
   {name: "Audio The boy flew too high", file: "audios/4_The Boy who Flew too High Natalie Complete Audio.mp3"},
-  {name: "Audio The Bell of Atri", flie: "audios/5_The Bell of Atri Natalie Complete Audio.mp3"}
+  {name: "Audio The Bell of Atri", file: "5_The Bell of Atri Kathy Complete Audio.mp3"}
 ];
 
 const jackHannafordTranscript = [
