@@ -7,7 +7,6 @@ const tracks = [
   { name: "The Bell of Atri", file: "audios/5_The Bell of Atri Kathy Complete Audio.mp3" }
 ];
 
-// --- TRANSCRIÇÕES COMPLETAS (mesmas do código anterior) ---
 const jackHannafordTranscript = [
   { start: 0, end: 6, text: "There was once a farmer and his wife. She had been married before, her first husband had died, and now she was married again." },
   { start: 7, end: 14, text: "They lived on a remote farm in the west of England, and what a pair of fools they were! Which of them was the most foolish? Listen to the story and decide for yourself." },
@@ -41,6 +40,7 @@ const jackHannafordTranscript = [
   { start: 178, end: 181, text: "As soon as the farmer knelt down, Jack Hannaford jumped onto the horse and escaped!" },
   { start: 182, end: 185, text: "Now, who do you think was more foolish, the farmer or his wife?" }
 ];
+
 const endlessTaleTranscript = [
   { start: 0, end: 3, text: "In the Far East there was a Great King who had no work to do." },
   { start: 4, end: 10, text: "Every day, and all day long, he sat on soft cushions and listened to stories. And no matter what the story was about, he never grew tired of hearing it, even though many of the stories took hours to complete." },
@@ -73,6 +73,7 @@ const endlessTaleTranscript = [
   { start: 130, end: 134, text: "So, the Stranger married The King's daughter and lived happily in the land for many years;" },
   { start: 135, end: 138, text: "however, his father-in-law, The King, did not care to listen to any more stories." }
 ];
+
 const beanstalkTranscript = [
   { start: 0, end: 3, text: "Once upon a time there lived a poor widow and her son Jack." },
   { start: 4, end: 7, text: "One day, Jack's mother told him to sell their only cow." },
@@ -113,6 +114,7 @@ const beanstalkTranscript = [
   { start: 144, end: 146, text: "Jack quickly ran inside his house and fetched an axe. He began to chop the beanstalk." },
   { start: 147, end: 150, text: "The giant fell and died. Jack and his mother were now very rich and they lived happily ever after." }
 ];
+
 const boyFlewTooHighTranscript = [
   { start: 0, end: 6, text: "The underground paths housing the Minotaur beneath the isle of Crete were created by the dangerous and intelligent mind of Daedalus, an artist of design and construction." },
   { start: 7, end: 10, text: "Daedalus was so brilliant that King Minos of Crete kept him as a prisoner." },
@@ -149,6 +151,7 @@ const boyFlewTooHighTranscript = [
   { start: 155, end: 158, text: "Gradually his wings began to lose their shape, and some of the feathers even fell off." },
   { start: 159, end: 163, text: "Icarus quickly moved his arms with worry and frenzy, but it was too late. He had lost the power of flight, and down he fell with force into the sea." }
 ];
+
 const bellOfAtriTranscript = [
   { start: 0, end: 4, text: "In the old Italian town of Atri, the King bought a fine, large bell and hung it in the marketplace tower." },
   { start: 5, end: 8, text: "A long rope that reached the ground was attached to the bell." },
@@ -196,22 +199,13 @@ const bellOfAtriTranscript = [
   { start: 165, end: 168, text: "The Loyal Horse was led to his new stable and had a dinner fit for a brave and Loyal Horse." }
 ];
 
-// ===============================================================
-// INÍCIO DO CÓDIGO DO PLAYER COM A NOVA LÓGICA
-// ===============================================================
 
 const playlist = document.getElementById("playlist");
 const audioPlayer = document.getElementById("audioPlayer");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
-const textlist = document.getElementById("textlist");
-
-// --- NOVAS CONSTANTES PARA O LOOP DE TEXTO ---
-const TEXT_LIMIT = 70; // Limite de caracteres. Textos maiores que isso irão "rolar".
-const SCROLL_INTERVAL = 3000; // Tempo em milissegundos para trocar o texto (3 segundos).
 
 let currentIndex = 0;
-let textScrollInterval = null; // Variável para controlar nosso loop de texto
 
 // Montar lista
 tracks.forEach((track, index) => {
@@ -227,11 +221,6 @@ function playTrack(index) {
   audioPlayer.play();
   updateActive();
 
-  // Interrompe o loop de texto anterior antes de iniciar um novo
-  if (textScrollInterval) {
-    clearInterval(textScrollInterval);
-  }
-
   // Carregar transcript correspondente
   switch (index) {
     case 0: showTranscript(jackHannafordTranscript); break;
@@ -241,53 +230,8 @@ function playTrack(index) {
     case 4: showTranscript(bellOfAtriTranscript); break;
     default: textlist.innerHTML = "<li>📖 Transcript não disponível</li>";
   }
-  
-  // Inicia o novo loop de texto
-  textScrollInterval = setInterval(updateScrollingTexts, SCROLL_INTERVAL);
 }
 
-// NOVA FUNÇÃO: Atualiza os textos que são muito longos
-function updateScrollingTexts() {
-  const longTextItems = document.querySelectorAll('#textlist li[data-full-text]');
-  
-  longTextItems.forEach(li => {
-    const fullText = li.dataset.fullText;
-    let currentIndex = parseInt(li.dataset.scrollIndex || 0);
-    
-    // Calcula o próximo índice
-    let nextIndex = currentIndex + TEXT_LIMIT;
-    if (nextIndex >= fullText.length) {
-      nextIndex = 0; // Volta para o início se chegou ao fim
-    }
-    
-    // Atualiza o texto exibido
-    const textToShow = fullText.substring(nextIndex, nextIndex + TEXT_LIMIT);
-    li.textContent = textToShow.length < fullText.length ? textToShow + '...' : textToShow;
-    
-    // Guarda o novo índice
-    li.dataset.scrollIndex = nextIndex;
-  });
-}
-
-function showTranscript(transcript) {
-  textlist.innerHTML = ""; // limpa antes
-  transcript.forEach((line) => {
-    const li = document.createElement("li");
-    
-    // Verifica se o texto é maior que o limite
-    if (line.text.length > TEXT_LIMIT) {
-      li.dataset.fullText = line.text; // Armazena o texto completo
-      li.dataset.scrollIndex = 0; // Inicia o índice de rolagem
-      li.textContent = line.text.substring(0, TEXT_LIMIT) + '...'; // Mostra só a primeira parte
-    } else {
-      li.textContent = line.text; // Mostra o texto normal se for curto
-    }
-    
-    li.dataset.start = line.start;
-    li.dataset.end = line.end;
-    textlist.appendChild(li);
-  });
-}
 
 function updateActive() {
   [...playlist.children].forEach((li, i) => {
@@ -307,6 +251,7 @@ nextBtn.addEventListener("click", () => {
   }
 });
 
+// Passa automático para a próxima
 audioPlayer.addEventListener("ended", () => {
   if (currentIndex < tracks.length - 1) {
     playTrack(currentIndex + 1);
@@ -315,6 +260,20 @@ audioPlayer.addEventListener("ended", () => {
   }
 });
 
+const textlist = document.getElementById("textlist");
+
+function showTranscript(transcript) {
+  textlist.innerHTML = ""; // limpa antes
+  transcript.forEach((line, i) => {
+    const li = document.createElement("li");
+    li.textContent = line.text;
+    li.dataset.start = line.start;
+    li.dataset.end = line.end;
+    textlist.appendChild(li);
+  });
+}
+
+// Atualiza destaque enquanto toca
 audioPlayer.addEventListener("timeupdate", () => {
   const current = audioPlayer.currentTime;
   [...textlist.children].forEach(li => {
@@ -324,11 +283,9 @@ audioPlayer.addEventListener("timeupdate", () => {
   });
 });
 
+
+// Mensagem final
 function showEndMessage() {
-  // Para o loop de texto ao final
-  if (textScrollInterval) {
-    clearInterval(textScrollInterval);
-  }
   const msg = document.createElement("div");
   msg.textContent = "🎉 Parabéns! Você terminou sua prática de inglês por hoje!";
   msg.style.marginTop = "20px";
