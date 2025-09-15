@@ -64,6 +64,7 @@ h1 {
   color: white;
   font-weight: 600;
   box-shadow: 0 6px 12px rgba(66,165,245,0.4);
+  text-decoration: none;
 }
 
 /* Player */
@@ -136,6 +137,7 @@ button:hover {
     color: #0c57fa;
     font-weight: bold;
     background: #eef3ff;
+    text-decoration: none;
   }
 
   /* 🔹 Texto rolável no mobile */
