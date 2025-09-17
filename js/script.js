@@ -277,7 +277,7 @@ function showTranscript(transcript) {
 audioPlayer.addEventListener("timeupdate", () => {
   const current = audioPlayer.currentTime;
   [...textlist.children].forEach(li => {
-    const start = parseFloat(li.dataset.start +0.3);
+    const start = parseFloat(li.dataset.start );
     const end = parseFloat(li.dataset.end +0.3); // pequeno delay para melhor visualização
     li.classList.toggle("active", current >= start && current <= end);
   });
