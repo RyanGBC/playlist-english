@@ -8,7 +8,7 @@ const tracks = [
 ];
 
 const jackHannafordTranscript = [
-  { start: -15, end: 6, text: "There was once a farmer and his wife. She had been married before, her first husband had died, and now she was married again." },
+  { start: -35, end: 6, text: "There was once a farmer and his wife. She had been married before, her first husband had died, and now she was married again." },
   { start: 7, end: 14, text: "They lived on a remote farm in the west of England, and what a pair of fools they were! Which of them was the most foolish? Listen to the story and decide for yourself." },
   { start: 15, end: 23, text: "In those days, there also lived an old soldier called Jack Hannaford. His coat was old and he was poor, but nobody thought that Jack Hannaford was stupid." },
   { start: 24, end: 31, text: "He was sly like a fox. When he left the army, he walked all around the country, looking for ways to play his tricks." },
@@ -42,7 +42,7 @@ const jackHannafordTranscript = [
 ];
 
 const endlessTaleTranscript = [
-  { start: -15, end: 3, text: "In the Far East there was a Great King who had no work to do." },
+  { start: -35, end: 3, text: "In the Far East there was a Great King who had no work to do." },
   { start: 4, end: 10, text: "Every day, and all day long, he sat on soft cushions and listened to stories. And no matter what the story was about, he never grew tired of hearing it, even though many of the stories took hours to complete." },
   { start: 11, end: 14, text: `"There is only one fault with your story," he often said, "it is too short."` },
   { start: 15, end: 19, text: "All the storytellers in the world were invited to his palace; and some of them told stories that were very long indeed." },
@@ -75,7 +75,7 @@ const endlessTaleTranscript = [
 ];
 
 const beanstalkTranscript = [
-  { start: -15, end: 3, text: "Once upon a time there lived a poor widow and her son Jack." },
+  { start: -35, end: 3, text: "Once upon a time there lived a poor widow and her son Jack." },
   { start: 4, end: 7, text: "One day, Jack's mother told him to sell their only cow." },
   { start: 8, end: 11, text: "Jack went to the market and on the way he met a man who wanted to buy his cow." },
   { start: 12, end: 14, text: `Jack asked, "What will you give me in return for my cow?"` },
@@ -116,7 +116,7 @@ const beanstalkTranscript = [
 ];
 
 const boyFlewTooHighTranscript = [
-  { start: -15, end: 6, text: "The underground paths housing the Minotaur beneath the isle of Crete were created by the dangerous and intelligent mind of Daedalus, an artist of design and construction." },
+  { start: -35, end: 6, text: "The underground paths housing the Minotaur beneath the isle of Crete were created by the dangerous and intelligent mind of Daedalus, an artist of design and construction." },
   { start: 7, end: 10, text: "Daedalus was so brilliant that King Minos of Crete kept him as a prisoner." },
   { start: 11, end: 15, text: "Daedalus lived with his son Icarus in a tower of the palace, and King Minos made him build tremendous weapons of war." },
   { start: 16, end: 20, text: "Although Daedalus and Icarus had a very comfortable life in the tower of the palace, the father wished to return home to Athens." },
@@ -153,7 +153,7 @@ const boyFlewTooHighTranscript = [
 ];
 
 const bellOfAtriTranscript = [
-  { start: -15, end: 4, text: "In the old Italian town of Atri, the King bought a fine, large bell and hung it in the marketplace tower." },
+  { start: -35, end: 4, text: "In the old Italian town of Atri, the King bought a fine, large bell and hung it in the marketplace tower." },
   { start: 5, end: 8, text: "A long rope that reached the ground was attached to the bell." },
   { start: 9, end: 11, text: "The smallest child could ring the bell by pulling the rope." },
   { start: 12, end: 14, text: `"It shall be the Bell of Justice," said the King.` },
