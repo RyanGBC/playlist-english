@@ -274,6 +274,7 @@ function playTrack(index) {
     case 2: showTranscript(beanstalkTranscript); break;
     case 3: showTranscript(boyFlewTooHighTranscript); break;
     case 4: showTranscript(bellOfAtriTranscript); break;
+    case 5: showTrasncript(GodilocksAndTheThreeBearsTranscript); break;
     default: textlist.innerHTML = "<li>📖 Transcript não disponível</li>";
   }
 }
