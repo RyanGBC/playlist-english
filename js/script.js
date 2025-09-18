@@ -4,7 +4,8 @@ const tracks = [
   { name: "The Endless Tale", file: "audios/2_The Endless Tale Natalie Complete Audio.mp3" },
   { name: "Jack and the Beanstalk", file: "audios/3_Jack and the Beanstalk Natalie Complete Audio.mp3" },
   { name: "The Boy Who Flew Too High", file: "audios/4_The Boy who Flew too High Natalie Complete Audio.mp3" },
-  { name: "The Bell of Atri", file: "audios/5_The Bell of Atri Kathy Complete Audio.mp3" }
+  { name: "The Bell of Atri", file: "audios/5_The Bell of Atri Kathy Complete Audio.mp3" },
+  { name: "Goldilocks and the Three Bears", file: "audios/6_Goldilocks and the Three Bears Kathy Complete Audio.mp3" }
 ];
 
 const jackHannafordTranscript = [
@@ -197,6 +198,51 @@ const bellOfAtriTranscript = [
   { start: 158, end: 161, text: `"With the money, we can buy a green field for your Loyal Horse to graze in and a warm stable to comfort him in his old age."` },
   { start: 162, end: 164, text: "The mean old Knight hung his head, angry to have lost his gold, but the people shouted with joy." },
   { start: 165, end: 168, text: "The Loyal Horse was led to his new stable and had a dinner fit for a brave and Loyal Horse." }
+];
+
+const GodilocksAndTheThreeBearsTranscript = [
+  { start: 0, end: 5, text: "Once upon a time, there were three bears, who lived in a house of their own deep in a forest." },
+  { start: 6, end: 10, text: "One of them was a Little Bear, one a Medium-sized Bear, and one a Big Bear." },
+  { start: 11, end: 16, text: "They had each a bowl for their porridge: a small bowl, a medium-sized bowl, and a great bowl." },
+  { start: 17, end: 22, text: "Also, they had each a chair to sit in: a small chair, a medium-sized chair, and a big chair." },
+  { start: 23, end: 28, text: "And they also had each a bed to sleep in: a small bed, a medium-sized bed, and a big bed." },
+  { start: 29, end: 38, text: "One day, after they carefully and neatly had made their beds and cooked porridge for breakfast, they took a walk in the woods while the porridge cooled in their bowls, so they wouldn't burn their mouths." },
+  { start: 39, end: 42, text: "They were polite, well-behaved bears." },
+  { start: 43, end: 50, text: "While they were away, a girl called Goldilocks (she had long, wavy blonde hair) passed by the house and peeped in the keyhole, for she was not at all a polite, well-behaved little girl." },
+  { start: 51, end: 58, text: "Seeing nobody home, she lifted the door's latch. The door was not locked because the three bears did nobody any harm and never suspected anybody would harm them." },
+  { start: 59, end: 62, text: "Goldilocks was pleased when she saw the porridge on the table." },
+  { start: 63, end: 68, text: "If she had been a good little girl, she would have waited for the three bears to come home, and perhaps they would've shared their breakfast." },
+  { start: 69, end: 73, text: "Unfortunately, Goldilocks was insolent and rude, so she set about helping herself." },
+  { start: 74, end: 78, text: "First she tasted the porridge of the Big Bear, and that was too hot. Medium-sized bear's porridge was too cold." },
+  { start: 79, end: 83, text: "But Little Bear's porridge was just right. She liked it so much that she ate it all up!" },
+  { start: 84, end: 89, text: "After Goldilocks finished breakfast, she sat down in the chair of the Big Bear, but it was too hard for her." },
+  { start: 90, end: 93, text: "Medium-sized Bear's chair was too soft. But Little Bear's chair was just right." },
+  { start: 94, end: 100, text: "She sat in Little Bear's small chair so long that the bottom of the chair came out and she fell to the ground, which made her very cross." },
+  { start: 101, end: 105, text: "Determined to rest, Goldilocks went upstairs into the bedchamber." },
+  { start: 106, end: 109, text: "First, she tried to lay on the big bed, but it was too high." },
+  { start: 110, end: 113, text: "Then, she tried to lay on the medium-sized bed, but it was too low." },
+  { start: 114, end: 118, text: "Finally, she tried the Little Bear's bed, and it was just right. She covered herself up comfortably and fell asleep." },
+  { start: 119, end: 124, text: "By this time, the three bears thought their porridge would be cool enough for them to eat, so they came home for breakfast." },
+  { start: 125, end: 129, text: "Careless Goldilocks had left the spoon of the Big Bear standing in his porridge." },
+  { start: 130, end: 132, text: `"Somebody has been at my porridge!" said the Big Bear.` },
+  { start: 133, end: 136, text: "Then the Medium-sized Bear also saw her spoon stuck in the middle of her porridge." },
+  { start: 137, end: 139, text: `"Somebody has been at my porridge!" said the Medium-sized Bear.` },
+  { start: 140, end: 144, text: "When Little Bear looked at his bowl, there was his spoon, but the porridge was all gone." },
+  { start: 145, end: 148, text: `"Somebody has been at my porridge and has eaten it all up!"` },
+  { start: 149, end: 153, text: "The three bears, knowing that someone had entered their house, began to look for the intruder. They checked their chairs." },
+  { start: 154, end: 157, text: `"Somebody has been sitting in my chair!" said both the Big Bear and the Medium-sized Bear.` },
+  { start: 158, end: 162, text: `"Somebody has been sitting in my chair, and has broken the bottom of it!" said the Little Bear.` },
+  { start: 163, end: 168, text: "Then, the three bears went upstairs into their bedchamber, where Goldilocks had left the carefully made beds a mess." },
+  { start: 169, end: 172, text: `"Somebody has been lying in my bed!" said the Big Bear.` },
+  { start: 173, end: 175, text: `"Somebody has been lying in my bed!" said the Medium-sized Bear.` },
+  { start: 176, end: 179, text: "When Little Bear looked at his bed, there was Goldilocks's yellow head on the pillow!" },
+  { start: 180, end: 183, text: `"Somebody has been lying in my bed - and she's still here!"` },
+  { start: 184, end: 188, text: "In Goldilocks' sleep, the great, gruff voice of the Big Bear sounded like no more than the roaring wind." },
+  { start: 189, end: 192, text: "Medium-sized Bear's voice sounded like a little bird chirping." },
+  { start: 193, end: 196, text: "But Little Bear's voice was so sharp and shrill that she woke up immediately." },
+  { start: 197, end: 203, text: "When Goldilocks saw the three bears on one side of the bed, she tumbled herself off the other side of the bed, ran to the window, and jumped." },
+  { start: 204, end: 209, text: "No one can say whether she ran into the deep forest and was lost or found her way home and got whipped for being a bad girl." },
+  { start: 210, end: 213, text: "The three bears never heard about her again and they lived happily ever after." }
 ];
 
 
