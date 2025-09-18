@@ -5,7 +5,7 @@ const tracks = [
   { name: "Jack and the Beanstalk", file: "audios/3_Jack and the Beanstalk Natalie Complete Audio.mp3" },
   { name: "The Boy Who Flew Too High", file: "audios/4_The Boy who Flew too High Natalie Complete Audio.mp3" },
   { name: "The Bell of Atri", file: "audios/5_The Bell of Atri Kathy Complete Audio.mp3" },
-  { name: "Goldilocks and the Three Bears", file: "audios/6_Goldilocks and the Three Bears Kathy Complete Audio.mp3" }
+  { name: "Goldilocks and the Three Bears",file:"audios/6_Goldilocks and the Three Bears Peter Audio Completo.mp3"}
 ];
 
 const jackHannafordTranscript = [
@@ -274,7 +274,7 @@ function playTrack(index) {
     case 2: showTranscript(beanstalkTranscript); break;
     case 3: showTranscript(boyFlewTooHighTranscript); break;
     case 4: showTranscript(bellOfAtriTranscript); break;
-    case 5: showTrasncript(GodilocksAndTheThreeBearsTranscript); break;
+    case 5: showTranscript(GodilocksAndTheThreeBearsTranscript); break;
     default: textlist.innerHTML = "<li>📖 Transcript não disponível</li>";
   }
 }
