@@ -1,12 +1,12 @@
 // 🔹 Liste seus áudios aqui (deixe os arquivos na mesma pasta do HTML)
 const tracks = [
   //{ name: "Jack Hannaford", file: "audios/1_Jack Hannaford Natalie Complete Audio.mp3" },
-  { name: "Antonio Canova", file: "audios/7_Antonio Canova Peter Complete Audio.mp3" },
   { name: "The Endless Tale", file: "audios/2_The Endless Tale Natalie Complete Audio.mp3" },
   { name: "Jack and the Beanstalk", file: "audios/3_Jack and the Beanstalk Natalie Complete Audio.mp3" },
   { name: "The Boy Who Flew Too High", file: "audios/4_The Boy who Flew too High Natalie Complete Audio.mp3" },
   { name: "The Bell of Atri", file: "audios/5_The Bell of Atri Kathy Complete Audio.mp3" },
-  { name: "Goldilocks and the Three Bears",file:"audios/6_Goldilocks and the Three Bears Peter Audio Completo.mp3"}
+  { name: "Goldilocks and the Three Bears",file:"audios/6_Goldilocks and the Three Bears Peter Audio Completo.mp3"},
+  { name: "Antonio Canova", file: "audios/7_Antonio Canova Peter Complete Audio.mp3" }
 ];
 
 /*const jackHannafordTranscript = [
@@ -43,55 +43,6 @@ const tracks = [
   { start: 182, end: 185, text: "Now, who do you think was more foolish, the farmer or his wife?" }
 ];
 */
-
-const antonioCanovaTranscript = [
-  { start: 0, end: 4, text: "Long ago in Italy, there lived a child named Antonio Canova." },
-  { start: 5, end: 9, text: "His father had died, so Antonio lived with his grandfather, a poor stonecutter." },
-  { start: 10, end: 14, text: "Antonio was too small to work, but he loved to go with his grandfather to the stone-yard." },
-  { start: 15, end: 21, text: "While the old man cut the large, unwieldy blocks of stone, the boy played among the chips, sculpting little figures from soft clay or smaller rocks." },
-  { start: 22, end: 26, text: `Antonio's skill surprised his grandfather. "The boy will be a sculptor some day," he said.` },
-  { start: 27, end: 31, text: `Every night when they got home, Antonio's grandmother would say, "What have you been doing today, my little sculptor?"` },
-  { start: 32, end: 37, text: "She would take him upon her lap and tell him stories that filled his mind with pictures of beautiful things." },
-  { start: 38, end: 42, text: "The next day, he would try to make some of those pictures in stone or clay." },
-  { start: 43, end: 46, text: "A rich man named The Count also lived in the same town." },
-  { start: 47, end: 51, text: "Sometimes The Count threw grand dinners for his wealthy friends from other towns." },
-  { start: 52, end: 56, text: "Antonio's grandfather would go to The Count's house to help with the kitchen work." },
-  { start: 57, end: 60, text: "He was a fine cook as he was a stonecutter." },
-  { start: 61, end: 64, text: "One day, Antonio went with his grandfather to The Count's estate." },
-  { start: 65, end: 69, text: "The boy could not cook or wait on the grand table, but he could help clean up." },
-  { start: 70, end: 73, text: "As workers set the grand table, there was a crash in the dining room." },
-  { start: 74, end: 78, text: `A man, pale and afraid, came quickly into the kitchen holding stone fragments. "What should I do?" he cried.` },
-  { start: 79, end: 84, text: `"I broke the centerpiece statue. The grand table will look bare without it, and The Count will be angry."` },
-  { start: 85, end: 91, text: "The staff trembled. Was the dinner going to be a failure? Everything depended on having the grand table perfectly set." },
-  { start: 92, end: 95, text: `All of the staff asked, "What should we do?"` },
-  { start: 96, end: 100, text: "Little Antonio approached the terrified man who broke the centerpiece." },
-  { start: 101, end: 104, text: `"If you had another statue, could you set the grand table perfectly?"` },
-  { start: 105, end: 108, text: `"Certainly," said the man, "if it were the right length and height."` },
-  { start: 109, end: 111, text: `"Perhaps I can make something that will work," said Antonio.` },
-  { start: 112, end: 117, text: `The man laughed. "Impossible! Who are you, talking about making statues on an hour's notice?"` },
-  { start: 118, end: 120, text: `"I am Antonio Canova."` },
-  { start: 121, end: 124, text: `"Let the boy try and see what he can do," said the grandfather.` },
-  { start: 125, end: 129, text: "The staff agreed. And so, since nothing else could be done, the man allowed Antonio to try." },
-  { start: 130, end: 134, text: "In the kitchen, a 200-pound piece of butter sat waiting to be appropriately prepared." },
-  { start: 135, end: 138, text: "It had just arrived, fresh from the milk farm on the mountain." },
-  { start: 139, end: 144, text: "With a kitchen knife in his hand, Antonio shaped this butter. He quickly created the shape of a proud lion, and all at the staff came closer to see it." },
-  { start: 145, end: 148, text: `"How beautiful!" they cried. "It's much better than the broken statue."` },
-  { start: 149, end: 153, text: `When it was finished, the man carried the statue to its place. "The grand table will be more beautiful than I ever hoped to make it!"` },
-  { start: 154, end: 158, text: "When The Count and his friends came to dinner, the first thing they saw was the yellow lion on the grand table." },
-  { start: 159, end: 164, text: `"What a beautiful work of art!" they cried. "Nobody but a great artist could ever create such a figure! Who made it?"` },
-  { start: 165, end: 169, text: `"Truly, my friends," The Count said, "this is as much of a surprise to me as to you."` },
-  { start: 170, end: 174, text: "The Count then called his head staff member and asked where he had found this wonderful statue." },
-  { start: 175, end: 178, text: `"It was made only an hour ago by a little boy in the kitchen," said the man.` },
-  { start: 179, end: 183, text: "This information made The Count's friends wonder more, so The Count called the boy into the room." },
-  { start: 184, end: 191, text: `"My boy," he said, "you have done a piece of work of which the greatest artists would be proud. What is your name, and who is your teacher?"` },
-  { start: 192, end: 196, text: `"My name is Antonio Canova, and I have had no teacher but my grandfather, the stonecutter."` },
-  { start: 197, end: 202, text: "All the guests came to stand around Antonio. There were famous artists among them, and they knew that the boy was a prodigy." },
-  { start: 203, end: 208, text: "When they sat down at the grand table, nothing pleased them more than talking to Antonio, and the dinner became a party in his honor." },
-  { start: 209, end: 211, text: "The very next day, The Count sent for Antonio to live with him." },
-  { start: 212, end: 216, text: "The best artists in the land taught him to sculpt, and he learned how to carve in marble." },
-  { start: 217, end: 221, text: "In a few years, Antonio Canova became known as one of the greatest sculptors in the world." }
-];
-
 
 const endlessTaleTranscript = [
   { start: 0, end: 3, text: "In the Far East there was a Great King who had no work to do." },
@@ -296,6 +247,55 @@ const GodilocksAndTheThreeBearsTranscript = [
   { start: 210, end: 213, text: "The three bears never heard about her again and they lived happily ever after." }
 ];
 
+const antonioCanovaTranscript = [
+  { start: 0, end: 4, text: "Long ago in Italy, there lived a child named Antonio Canova." },
+  { start: 5, end: 9, text: "His father had died, so Antonio lived with his grandfather, a poor stonecutter." },
+  { start: 10, end: 14, text: "Antonio was too small to work, but he loved to go with his grandfather to the stone-yard." },
+  { start: 15, end: 21, text: "While the old man cut the large, unwieldy blocks of stone, the boy played among the chips, sculpting little figures from soft clay or smaller rocks." },
+  { start: 22, end: 26, text: `Antonio's skill surprised his grandfather. "The boy will be a sculptor some day," he said.` },
+  { start: 27, end: 31, text: `Every night when they got home, Antonio's grandmother would say, "What have you been doing today, my little sculptor?"` },
+  { start: 32, end: 37, text: "She would take him upon her lap and tell him stories that filled his mind with pictures of beautiful things." },
+  { start: 38, end: 42, text: "The next day, he would try to make some of those pictures in stone or clay." },
+  { start: 43, end: 46, text: "A rich man named The Count also lived in the same town." },
+  { start: 47, end: 51, text: "Sometimes The Count threw grand dinners for his wealthy friends from other towns." },
+  { start: 52, end: 56, text: "Antonio's grandfather would go to The Count's house to help with the kitchen work." },
+  { start: 57, end: 60, text: "He was a fine cook as he was a stonecutter." },
+  { start: 61, end: 64, text: "One day, Antonio went with his grandfather to The Count's estate." },
+  { start: 65, end: 69, text: "The boy could not cook or wait on the grand table, but he could help clean up." },
+  { start: 70, end: 73, text: "As workers set the grand table, there was a crash in the dining room." },
+  { start: 74, end: 78, text: `A man, pale and afraid, came quickly into the kitchen holding stone fragments. "What should I do?" he cried.` },
+  { start: 79, end: 84, text: `"I broke the centerpiece statue. The grand table will look bare without it, and The Count will be angry."` },
+  { start: 85, end: 91, text: "The staff trembled. Was the dinner going to be a failure? Everything depended on having the grand table perfectly set." },
+  { start: 92, end: 95, text: `All of the staff asked, "What should we do?"` },
+  { start: 96, end: 100, text: "Little Antonio approached the terrified man who broke the centerpiece." },
+  { start: 101, end: 104, text: `"If you had another statue, could you set the grand table perfectly?"` },
+  { start: 105, end: 108, text: `"Certainly," said the man, "if it were the right length and height."` },
+  { start: 109, end: 111, text: `"Perhaps I can make something that will work," said Antonio.` },
+  { start: 112, end: 117, text: `The man laughed. "Impossible! Who are you, talking about making statues on an hour's notice?"` },
+  { start: 118, end: 120, text: `"I am Antonio Canova."` },
+  { start: 121, end: 124, text: `"Let the boy try and see what he can do," said the grandfather.` },
+  { start: 125, end: 129, text: "The staff agreed. And so, since nothing else could be done, the man allowed Antonio to try." },
+  { start: 130, end: 134, text: "In the kitchen, a 200-pound piece of butter sat waiting to be appropriately prepared." },
+  { start: 135, end: 138, text: "It had just arrived, fresh from the milk farm on the mountain." },
+  { start: 139, end: 144, text: "With a kitchen knife in his hand, Antonio shaped this butter. He quickly created the shape of a proud lion, and all at the staff came closer to see it." },
+  { start: 145, end: 148, text: `"How beautiful!" they cried. "It's much better than the broken statue."` },
+  { start: 149, end: 153, text: `When it was finished, the man carried the statue to its place. "The grand table will be more beautiful than I ever hoped to make it!"` },
+  { start: 154, end: 158, text: "When The Count and his friends came to dinner, the first thing they saw was the yellow lion on the grand table." },
+  { start: 159, end: 164, text: `"What a beautiful work of art!" they cried. "Nobody but a great artist could ever create such a figure! Who made it?"` },
+  { start: 165, end: 169, text: `"Truly, my friends," The Count said, "this is as much of a surprise to me as to you."` },
+  { start: 170, end: 174, text: "The Count then called his head staff member and asked where he had found this wonderful statue." },
+  { start: 175, end: 178, text: `"It was made only an hour ago by a little boy in the kitchen," said the man.` },
+  { start: 179, end: 183, text: "This information made The Count's friends wonder more, so The Count called the boy into the room." },
+  { start: 184, end: 191, text: `"My boy," he said, "you have done a piece of work of which the greatest artists would be proud. What is your name, and who is your teacher?"` },
+  { start: 192, end: 196, text: `"My name is Antonio Canova, and I have had no teacher but my grandfather, the stonecutter."` },
+  { start: 197, end: 202, text: "All the guests came to stand around Antonio. There were famous artists among them, and they knew that the boy was a prodigy." },
+  { start: 203, end: 208, text: "When they sat down at the grand table, nothing pleased them more than talking to Antonio, and the dinner became a party in his honor." },
+  { start: 209, end: 211, text: "The very next day, The Count sent for Antonio to live with him." },
+  { start: 212, end: 216, text: "The best artists in the land taught him to sculpt, and he learned how to carve in marble." },
+  { start: 217, end: 221, text: "In a few years, Antonio Canova became known as one of the greatest sculptors in the world." }
+];
+
+
 
 const playlist = document.getElementById("playlist");
 const audioPlayer = document.getElementById("audioPlayer");
@@ -321,12 +321,12 @@ function playTrack(index) {
   // Carregar transcript correspondente
   switch (index) {
     //case 0: showTranscript(jackHannafordTranscript); break;
-    case 0: showTranscript(antonioCanovaTranscript); break;
-    case 1: showTranscript(endlessTaleTranscript); break;
-    case 2: showTranscript(beanstalkTranscript); break;
-    case 3: showTranscript(boyFlewTooHighTranscript); break;
-    case 4: showTranscript(bellOfAtriTranscript); break;
-    case 5: showTranscript(GodilocksAndTheThreeBearsTranscript); break;
+    case 0: showTranscript(endlessTaleTranscript); break;
+    case 1: showTranscript(beanstalkTranscript); break;
+    case 2: showTranscript(boyFlewTooHighTranscript); break;
+    case 3: showTranscript(bellOfAtriTranscript); break;
+    case 4: showTranscript(GodilocksAndTheThreeBearsTranscript); break;
+    case 5: showTranscript(antonioCanovaTranscript); break;
     default: textlist.innerHTML = "<li>📖 Transcript não disponível</li>";
   }
 }
