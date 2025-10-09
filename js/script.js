@@ -6,7 +6,8 @@ const tracks = [
   { name: "The Boy Who Flew Too High", file: "audios/4_The Boy who Flew too High Natalie Complete Audio.mp3" },
   { name: "The Bell of Atri", file: "audios/5_The Bell of Atri Kathy Complete Audio.mp3" },
   { name: "Goldilocks and the Three Bears",file:"audios/6_Goldilocks and the Three Bears Peter Audio Completo.mp3"},
-  { name: "Antonio Canova", file: "audios/7_Antonio Canova Peter Complete Audio.mp3" }
+  { name: "Antonio Canova", file: "audios/7_Antonio Canova Peter Complete Audio.mp3" },
+  { name: "Why Cats and Dogs are Enemies", file: "audios/8_Why Cats and Dogs are Enemies Peter Complete Audio.mp3" }
 ];
 
 /*const jackHannafordTranscript = [
@@ -44,7 +45,7 @@ const tracks = [
 ];
 */
 
-const endlessTaleTranscript = [
+/*const endlessTaleTranscript = [
   { start: 0, end: 3, text: "In the Far East there was a Great King who had no work to do." },
   { start: 4, end: 10, text: "Every day, and all day long, he sat on soft cushions and listened to stories. And no matter what the story was about, he never grew tired of hearing it, even though many of the stories took hours to complete." },
   { start: 11, end: 14, text: `"There is only one fault with your story," he often said, "it is too short."` },
@@ -76,6 +77,7 @@ const endlessTaleTranscript = [
   { start: 130, end: 134, text: "So, the Stranger married The King's daughter and lived happily in the land for many years;" },
   { start: 135, end: 138, text: "however, his father-in-law, The King, did not care to listen to any more stories." }
 ];
+*/
 
 const beanstalkTranscript = [
   { start: 0, end: 3, text: "Once upon a time there lived a poor widow and her son Jack." },
@@ -295,6 +297,49 @@ const antonioCanovaTranscript = [
   { start: 217, end: 221, text: "In a few years, Antonio Canova became known as one of the greatest sculptors in the world." }
 ];
 
+const whyCatsAndDogsAreEnemiesTranscript = [
+  { start: 0, end: 4, text: "I used to sneak into a house through a small crack to get supper sometimes." },
+  { start: 5, end: 8, text: "I'm a mouse, so I can fit through the teeniest entrances." },
+  { start: 9, end: 13, text: "Unfortunately, the house and its inhabitants weren't doing very well. Every time I visited, there were fewer crumbs." },
+  { start: 14, end: 22, text: "Additionally, the dangers hardly made it worthwhile. They had a cat who was getting skinnier, so I should have known that she would be on the lookout for a tasty morsel like me." },
+  { start: 23, end: 28, text: "Though my nose does twitch, I'm not nosey, but one night I could not help overhearing an argument." },
+  { start: 29, end: 31, text: `"It's all your fault we're starving," said a distressed woman.` },
+  { start: 32, end: 37, text: `"You shouldn't have sold my mother's ring behind my back. All you got for it was an old, lame horse!"` },
+  { start: 38, end: 40, text: `"What's the ring got to do with it?" asked the man.` },
+  { start: 41, end: 44, text: `"As I told you, the person who wears that ring will never go hungry."` },
+  { start: 45, end: 47, text: `"I don't believe in magic and nonsense," replied the man.` },
+  { start: 48, end: 51, text: `"That's why you are so thin and your trousers keep falling down."` },
+  { start: 52, end: 56, text: "The conversation was so interesting that I hung around a fraction too long. And then... BAM! Everything went black." },
+  { start: 57, end: 60, text: `"Am I dead or alive?" I thought, but then I heard a voice I recognized.` },
+  { start: 61, end: 66, text: `The dog, a mutt who smelled like a rotting blanket, said, "Hey cat, hang on. Don't eat that mouse just yet."` },
+  { start: 67, end: 70, text: `"But I haven't had a decent meal in days," whined the cat.` },
+  { start: 71, end: 78, text: `"Neither have I, but the mouse will only satisfy your tummy for a few hours. We can use him to fill our stomachs and our masters' stomachs for the rest of our days."` },
+  { start: 79, end: 82, text: `"It's a mouse, not a hen. He can't lay eggs," snarled the cat.` },
+  { start: 83, end: 85, text: `"No," woofed the dog, "that's not what I mean."` },
+  { start: 86, end: 88, text: `"The first thing about a mouse is that he's small..." "So?"` },
+  { start: 89, end: 96, text: `"So, if we take him to the house where the magic ring is, he can slip inside and get it for us. He'll do this because his life depends on it. The Magpie told me where the house is. Let's head off!"` },
+  { start: 97, end: 102, text: "The cat saw the dog was not as stupid as he looked, so the cat held me in his mouth by my tail and sprang through the window." },
+  { start: 103, end: 106, text: "Off they ran down the alleyway. I was jostled around, but hey, I was still alive." },
+  { start: 107, end: 111, text: "Luckily, we were not far from the ring's location. Inside we could see a man and woman, both well-fed and happy." },
+  { start: 112, end: 116, text: `The dog said, "We've come to the right place. Hopefully, she takes the ring off tonight."` },
+  { start: 117, end: 119, text: "The cat prowled around, finding a tiny hole near a window." },
+  { start: 120, end: 124, text: `"You go in," she said, "and bring back the ring if you value your pathetic mousey life."` },
+  { start: 125, end: 130, text: "In I went, and although mice aren't equipped with a nose for gold, I was able to spot the ring glinting in the moonlight." },
+  { start: 131, end: 134, text: "The lady left it on the table with her other jewelry." },
+  { start: 135, end: 138, text: `I seized the ring in my mouth and slipped back out again. "Here it is," I said to the cat.` },
+  { start: 139, end: 142, text: `"Say goodbye to this cruel world, little mouse," replied the cat, with claws flashing in the moonlight.` },
+  { start: 143, end: 146, text: `I trembled for my life, but the dog woofed, "Stop right there, cat. We must keep our word."` },
+  { start: 147, end: 151, text: "We returned to the town. This time, the cat went over the rooftops while the dog ran down the alleyways." },
+  { start: 152, end: 154, text: "I went home to my nest for a good sleep." },
+  { start: 155, end: 158, text: "A few weeks later, I was going past the house where the cat and the dog lived." },
+  { start: 159, end: 163, text: "I looked through the window. The human couple was having a feast, and the cat had put on weight." },
+  { start: 164, end: 166, text: `"So," I thought, "the magic ring truly does prevent hunger."` },
+  { start: 167, end: 171, text: "I too deserved a reward for my daring part in the rescue of the ring, so I decided to slip inside for some crumbs." },
+  { start: 172, end: 175, text: `Around the back of the house, I found the dog tied up, more miserable than ever. "What's happened?"` },
+  { start: 176, end: 179, text: `I asked, "The house is full of food. Why aren't you tucking in?"` },
+  { start: 180, end: 194, text: `The dog whined. "Aroooo! That filthy lying cat! She ran to the house before me and sprang onto our owners' bed, waking them with the great gift of the ring. Oh, how delighted they were! She is rewarded every day, but they punish me. They think I'm just a smelly, useless animal. I'm lucky if they remember to throw me a scrap. GRRRRRRR! I shall hate that cat until the day I die, and so shall all my puppies hate all cats forever!"` }
+];
+
 
 
 const playlist = document.getElementById("playlist");
@@ -321,12 +366,13 @@ function playTrack(index) {
   // Carregar transcript correspondente
   switch (index) {
     //case 0: showTranscript(jackHannafordTranscript); break;
-    case 0: showTranscript(endlessTaleTranscript); break;
-    case 1: showTranscript(beanstalkTranscript); break;
-    case 2: showTranscript(boyFlewTooHighTranscript); break;
-    case 3: showTranscript(bellOfAtriTranscript); break;
-    case 4: showTranscript(GodilocksAndTheThreeBearsTranscript); break;
-    case 5: showTranscript(antonioCanovaTranscript); break;
+    //case 0: showTranscript(endlessTaleTranscript); break;
+    case 0: showTranscript(beanstalkTranscript); break;
+    case 1: showTranscript(boyFlewTooHighTranscript); break;
+    case 2: showTranscript(bellOfAtriTranscript); break;
+    case 3: showTranscript(GodilocksAndTheThreeBearsTranscript); break;
+    case 4: showTranscript(antonioCanovaTranscript); break;
+    case 5: showTranscript(whyCatsAndDogsAreEnemiesTranscript); break;
     default: textlist.innerHTML = "<li>📖 Transcript não disponível</li>";
   }
 }
