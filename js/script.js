@@ -1,7 +1,7 @@
 // 🔹 Liste seus áudios aqui (deixe os arquivos na mesma pasta do HTML)
 const tracks = [
   //{ name: "Jack Hannaford", file: "audios/1_Jack Hannaford Natalie Complete Audio.mp3" },
-  { name: "The Endless Tale", file: "audios/2_The Endless Tale Natalie Complete Audio.mp3" },
+  //{ name: "The Endless Tale", file: "audios/2_The Endless Tale Natalie Complete Audio.mp3" },
   { name: "Jack and the Beanstalk", file: "audios/3_Jack and the Beanstalk Natalie Complete Audio.mp3" },
   { name: "The Boy Who Flew Too High", file: "audios/4_The Boy who Flew too High Natalie Complete Audio.mp3" },
   { name: "The Bell of Atri", file: "audios/5_The Bell of Atri Kathy Complete Audio.mp3" },
