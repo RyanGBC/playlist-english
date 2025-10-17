@@ -2,12 +2,17 @@
 const tracks = [
   //{ name: "Jack Hannaford", file: "audios/1_Jack Hannaford Natalie Complete Audio.mp3" },
   //{ name: "The Endless Tale", file: "audios/2_The Endless Tale Natalie Complete Audio.mp3" },
-  { name: "Jack and the Beanstalk", file: "audios/3_Jack and the Beanstalk Natalie Complete Audio.mp3" },
+  //{ name: "Jack and the Beanstalk", file: "audios/3_Jack and the Beanstalk Natalie Complete Audio.mp3" },
   { name: "The Boy Who Flew Too High", file: "audios/4_The Boy who Flew too High Natalie Complete Audio.mp3" },
   { name: "The Bell of Atri", file: "audios/5_The Bell of Atri Kathy Complete Audio.mp3" },
   { name: "Goldilocks and the Three Bears",file:"audios/6_Goldilocks and the Three Bears Peter Audio Completo.mp3"},
   { name: "Antonio Canova", file: "audios/7_Antonio Canova Peter Complete Audio.mp3" },
-  { name: "Why Cats and Dogs are Enemies", file: "audios/8_Why Cats and Dogs are Enemies Peter Complete Audio.mp3" }
+  { name: "Why Cats and Dogs are Enemies", file: "audios/8_Why Cats and Dogs are Enemies Peter Complete Audio.mp3" },
+  { name : "Lost and Found part 1", file: "9_AUDIO Lost and Found 01 Peter.mp3"},
+  { name : "Lost and Found part 2", file: "10_AUDIO Lost and Found 02 Peter.mp3"},
+  { name : "Lost and Found part 3", file: "11_AUDIO Lost and Found 03 Peter.mp3"},
+  { name : "Lost and Found part 4", file: "12_AUDIO Lost and Found 04 Peter.mp3"},
+  { name : "Lost and Found part 5", file: "13_AUDIO Lost and Found 05 Peter.mp3"}
 ];
 
 /*const jackHannafordTranscript = [
@@ -79,7 +84,7 @@ const tracks = [
 ];
 */
 
-const beanstalkTranscript = [
+/*const beanstalkTranscript = [
   { start: 0, end: 3, text: "Once upon a time there lived a poor widow and her son Jack." },
   { start: 4, end: 7, text: "One day, Jack's mother told him to sell their only cow." },
   { start: 8, end: 11, text: "Jack went to the market and on the way he met a man who wanted to buy his cow." },
@@ -119,6 +124,7 @@ const beanstalkTranscript = [
   { start: 144, end: 146, text: "Jack quickly ran inside his house and fetched an axe. He began to chop the beanstalk." },
   { start: 147, end: 150, text: "The giant fell and died. Jack and his mother were now very rich and they lived happily ever after." }
 ];
+*/
 
 const boyFlewTooHighTranscript = [
   { start: 0, end: 6, text: "The underground paths housing the Minotaur beneath the isle of Crete were created by the dangerous and intelligent mind of Daedalus, an artist of design and construction." },
@@ -367,12 +373,12 @@ function playTrack(index) {
   switch (index) {
     //case 0: showTranscript(jackHannafordTranscript); break;
     //case 0: showTranscript(endlessTaleTranscript); break;
-    case 0: showTranscript(beanstalkTranscript); break;
-    case 1: showTranscript(boyFlewTooHighTranscript); break;
-    case 2: showTranscript(bellOfAtriTranscript); break;
-    case 3: showTranscript(GodilocksAndTheThreeBearsTranscript); break;
-    case 4: showTranscript(antonioCanovaTranscript); break;
-    case 5: showTranscript(whyCatsAndDogsAreEnemiesTranscript); break;
+    //case 0: showTranscript(beanstalkTranscript); break;
+    case 0: showTranscript(boyFlewTooHighTranscript); break;
+    case 1: showTranscript(bellOfAtriTranscript); break;
+    case 2: showTranscript(GodilocksAndTheThreeBearsTranscript); break;
+    case 3: showTranscript(antonioCanovaTranscript); break;
+    case 4: showTranscript(whyCatsAndDogsAreEnemiesTranscript); break;
     default: textlist.innerHTML = "<li>📖 Transcript não disponível</li>";
   }
 }
