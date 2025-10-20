@@ -3,17 +3,18 @@ const tracks = [
   //{ name: "Jack Hannaford", file: "audios/1_Jack Hannaford Natalie Complete Audio.mp3" },
   //{ name: "The Endless Tale", file: "audios/2_The Endless Tale Natalie Complete Audio.mp3" },
   //{ name: "Jack and the Beanstalk", file: "audios/3_Jack and the Beanstalk Natalie Complete Audio.mp3" },
-  { name: "The Boy Who Flew Too High", file: "audios/4_The Boy who Flew too High Natalie Complete Audio.mp3" },
+  //{ name: "The Boy Who Flew Too High", file: "audios/4_The Boy who Flew too High Natalie Complete Audio.mp3" },
   { name: "The Bell of Atri", file: "audios/5_The Bell of Atri Kathy Complete Audio.mp3" },
   { name: "Goldilocks and the Three Bears",file:"audios/6_Goldilocks and the Three Bears Peter Audio Completo.mp3"},
   { name: "Antonio Canova", file: "audios/7_Antonio Canova Peter Complete Audio.mp3" },
   { name: "Why Cats and Dogs are Enemies", file: "audios/8_Why Cats and Dogs are Enemies Peter Complete Audio.mp3" },
-  { name : "Lost and Found part 1", file: "audios/9_AUDIO Lost and Found 01 Peter.mp3"},
-  { name : "Lost and Found part 2", file: "audios/10_AUDIO Lost and Found 02 Peter.mp3"},
-  { name : "Lost and Found part 3", file: "audios/11_AUDIO Lost and Found 03 Peter.mp3"},
-  { name : "Lost and Found part 4", file: "audios/12_AUDIO Lost and Found 04 Peter.mp3"},
-  { name : "Lost and Found part 5", file: "audios/13_AUDIO Lost and Found 05 Peter.mp3"},
-  { name : "Lost and Found part 6", file: "audios/14_AUDIO Lost and Found 06 Peter.mp3"}
+  { name: "Lost and Found part 1", file: "audios/9_AUDIO Lost and Found 01 Peter.mp3"},
+  { name: "Lost and Found part 2", file: "audios/10_AUDIO Lost and Found 02 Peter.mp3"},
+  { name: "Lost and Found part 3", file: "audios/11_AUDIO Lost and Found 03 Peter.mp3"},
+  { name: "Lost and Found part 4", file: "audios/12_AUDIO Lost and Found 04 Peter.mp3"},
+  { name: "Lost and Found part 5", file: "audios/13_AUDIO Lost and Found 05 Peter.mp3"},
+  { name: "Lost and Found part 6", file: "audios/14_AUDIO Lost and Found 06 Peter.mp3"},
+  { name: "Lost and Found part 7", file: "audios/15_AUDIO Lost and Found 07 Peter.mp3"}
 ];
 
 /*const jackHannafordTranscript = [
@@ -375,11 +376,11 @@ function playTrack(index) {
     //case 0: showTranscript(jackHannafordTranscript); break;
     //case 0: showTranscript(endlessTaleTranscript); break;
     //case 0: showTranscript(beanstalkTranscript); break;
-    case 0: showTranscript(boyFlewTooHighTranscript); break;
-    case 1: showTranscript(bellOfAtriTranscript); break;
-    case 2: showTranscript(GodilocksAndTheThreeBearsTranscript); break;
-    case 3: showTranscript(antonioCanovaTranscript); break;
-    case 4: showTranscript(whyCatsAndDogsAreEnemiesTranscript); break;
+    //case 0: showTranscript(boyFlewTooHighTranscript); break;
+    //case 1: showTranscript(bellOfAtriTranscript); break;
+    //case 2: showTranscript(GodilocksAndTheThreeBearsTranscript); break;
+    //case 3: showTranscript(antonioCanovaTranscript); break;
+    //case 4: showTranscript(whyCatsAndDogsAreEnemiesTranscript); break;
     default: textlist.innerHTML = "<li>📖 Transcript não disponível</li>";
   }
 }
