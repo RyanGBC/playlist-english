@@ -14,7 +14,8 @@ const tracks = [
   { name: "Lost and Found part 4", file: "audios/12_AUDIO Lost and Found 04 Peter.mp3"},
   { name: "Lost and Found part 5", file: "audios/13_AUDIO Lost and Found 05 Peter.mp3"},
   { name: "Lost and Found part 6", file: "audios/14_AUDIO Lost and Found 06 Peter.mp3"},
-  { name: "Lost and Found part 7", file: "audios/15_AUDIO Lost and Found 07 Peter.mp3"}
+  { name: "Lost and Found part 7", file: "audios/15_AUDIO Lost and Found 07 Peter.mp3"},
+  { name: "Lost and Found part 8", file: "audios/16_AUDIO Lost and Found 08 Peter.mp3"}
 ];
 
 /*const jackHannafordTranscript = [
