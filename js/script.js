@@ -3,12 +3,14 @@ const tracks = [
   //{ name: "Jack Hannaford", file: "audios/1_Jack Hannaford Natalie Complete Audio.mp3" },
   //{ name: "The Endless Tale", file: "audios/2_The Endless Tale Natalie Complete Audio.mp3" },
   //{ name: "Jack and the Beanstalk", file: "audios/3_Jack and the Beanstalk Natalie Complete Audio.mp3" },
-  { name: "The Boy Who Flew Too High", file: "audios/4_The Boy who Flew too High Natalie Complete Audio.mp3" },
+  //{ name: "The Boy Who Flew Too High", file: "audios/4_The Boy who Flew too High Natalie Complete Audio.mp3" },
   { name: "The Bell of Atri", file: "audios/5_The Bell of Atri Kathy Complete Audio.mp3" },
   { name: "Goldilocks and the Three Bears",file:"audios/6_Goldilocks and the Three Bears Peter Audio Completo.mp3"},
   { name: "Antonio Canova", file: "audios/7_Antonio Canova Peter Complete Audio.mp3" },
   { name: "Why Cats and Dogs are Enemies", file: "audios/8_Why Cats and Dogs are Enemies Peter Complete Audio.mp3" },
-  { name: "Lost and Found", file: "audios/9_Lost and Found Peter Complete Audio.mp3"}
+  { name: "Lost and Found", file: "audios/9_Lost and Found Peter Complete Audio.mp3"},
+  { name: "How the Moon was Made", file: "audios/10_AUDIO Steve Jobs Commencement Address 01.mp3" },
+  { name: "How the Moon was Made", file: "audios/11_AUDIO Steve Jobs Commencement Address 02.mp3" }
 ];
 
 /*const jackHannafordTranscript = [
