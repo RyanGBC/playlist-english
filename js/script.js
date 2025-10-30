@@ -1,4 +1,5 @@
 // 🔹 Liste seus áudios aqui (deixe os arquivos na mesma pasta do HTML)
+
 const tracks = [
   //{ name: "Jack Hannaford", file: "audios/1_Jack Hannaford Natalie Complete Audio.mp3" },
   //{ name: "The Endless Tale", file: "audios/2_The Endless Tale Natalie Complete Audio.mp3" },
@@ -354,6 +355,9 @@ const audioPlayer = document.getElementById("audioPlayer");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
+// Chama a função para calcular o tempo total quando a página carregar
+document.addEventListener("DOMContentLoaded", calculateTotalPlaylistDuration);
+
 let currentIndex = 0;
 
 // Montar lista
@@ -435,6 +439,38 @@ audioPlayer.addEventListener("timeupdate", () => {
   });
 });
 
+// Função para calcular o tempo total da playlist
+function calculateTotalPlaylistDuration() {
+  let totalSeconds = 0;
+  const audioElements = document.querySelectorAll('audio');
+  
+  // Promise para esperar que todos os áudios carreguem
+  const promises = Array.from(audioElements).map(audio => {
+    return new Promise(resolve => {
+      if (audio.readyState > 0) {
+        resolve(audio.duration);
+      } else {
+        audio.onloadedmetadata = () => resolve(audio.duration);
+      }
+    });
+  });
+
+  // Quando todos os áudios estiverem carregados, calcula o total
+  Promise.all(promises).then(durations => {
+    totalSeconds = durations.reduce((acc, curr) => acc + curr, 0);
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = Math.floor(totalSeconds % 60);
+    
+    const totalTime = `${hours}h ${minutes}m ${seconds}s`;
+    console.log(`Tempo total da playlist: ${totalTime}`);
+    
+    // Adiciona o tempo total na interface
+    const playlistInfo = document.createElement('div');
+    playlistInfo.innerHTML = `<p>Duração total da playlist: ${totalTime}</p>`;
+    document.querySelector('.player').insertAdjacentElement('beforebegin', playlistInfo);
+  });
+}
 
 // Mensagem final
 function showEndMessage() {
