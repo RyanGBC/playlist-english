@@ -442,34 +442,36 @@ audioPlayer.addEventListener("timeupdate", () => {
 // Função para calcular o tempo total da playlist
 function calculateTotalPlaylistDuration() {
   let totalSeconds = 0;
-  const audioElements = document.querySelectorAll('audio');
   const durationElement = document.getElementById('calculateTotalPlaylistDuration');
-  
-  // Promise para esperar que todos os áudios carreguem
-  const promises = Array.from(audioElements).map(audio => {
+
+  // Cria um array de Promises para carregar cada arquivo de áudio
+  const promises = tracks.map(track => {
     return new Promise(resolve => {
-      if (audio.readyState > 0) {
-        resolve(audio.duration);
-      } else {
-        audio.onloadedmetadata = () => resolve(audio.duration);
-      }
+      const tempAudio = document.createElement('audio');
+      tempAudio.src = track.file;
+      tempAudio.preload = 'metadata';
+      tempAudio.onloadedmetadata = () => {
+        resolve(tempAudio.duration || 0);
+      };
+      tempAudio.onerror = () => {
+        resolve(0); // Se não conseguir carregar, considera duração 0
+      };
     });
   });
 
-  // Quando todos os áudios estiverem carregados, calcula o total
   Promise.all(promises).then(durations => {
     totalSeconds = durations.reduce((acc, curr) => acc + curr, 0);
     const hours = Math.floor(totalSeconds / 3600);
     const minutes = Math.floor((totalSeconds % 3600) / 60);
     const seconds = Math.floor(totalSeconds % 60);
-    
+
     const totalTime = `${hours}h ${minutes}m ${seconds}s`;
     console.log(`Tempo total da playlist: ${totalTime}`);
-    
+
     // Atualiza o elemento existente com o tempo total
     durationElement.textContent = `Sua playlist tem um total de: ${totalTime}`;
   });
-} 
+}
 
 // Mensagem final
 function showEndMessage() {
