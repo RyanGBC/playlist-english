@@ -27,7 +27,7 @@ function calculateTotalPlaylistDuration() {
     console.log(`Tempo total da playlist: ${totalTime}`);
     
     // Adiciona o tempo total na interface
-    const playlistInfo = document.createElement('div');
+    const playlistInfo = document.createElement('calculateTotalPlaylistDuration');
     playlistInfo.innerHTML = `<p>Duração total da playlist: ${totalTime}</p>`;
     document.querySelector('.player').insertAdjacentElement('beforebegin', playlistInfo);
   });
