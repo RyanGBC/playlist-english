@@ -111,6 +111,11 @@ button:hover {
   background: #eef3ff;
 }
 
+#calculateTotalPlaylistDuration {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #07ec2e;
+}
 
 /* 📱 Responsividade - até 600px */
 @media (max-width: 600px) {
@@ -155,6 +160,13 @@ button:hover {
   }
 }
 
+#calculateTotalPlaylistDuration {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #07ec2e;
+}
+
+
 /* 📱 Responsividade - até 480px */
 @media (max-width: 480px) {
   h1 {
@@ -194,5 +206,11 @@ button:hover {
   #playlist li, #textlist li {
     list-style-type: none;
   }
+}
+
+#calculateTotalPlaylistDuration {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #07ec2e;
 }
 
