@@ -15,7 +15,8 @@ const tracks = [
   { name: "Steve Jobs Commencement 3", file: "audios/12_AUDIO Steve Jobs Commencement Address 03.mp3" },
   { name: "Steve Jobs Commencement 4", file: "audios/13_AUDIO Steve Jobs Commencement Address 04.mp3" },
   { name: "Steve Jobs Commencement 5", file: "audios/14_AUDIO Steve Jobs Commencement Address 05.mp3" },
-  { name: "Steve Jobs Commencement 6", file: "audios/15_AUDIO Steve Jobs Commencement Address 06.mp3" }
+  { name: "Steve Jobs Commencement 6", file: "audios/15_AUDIO Steve Jobs Commencement Address 06.mp3" },
+  { name: "Steve Jobs Commencement 7", file: "audios/16_AUDIO Steve Jobs Commencement Address 07.mp3" }
 ];
 
 /*const jackHannafordTranscript = [
