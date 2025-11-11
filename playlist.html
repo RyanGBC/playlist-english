@@ -10,25 +10,31 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>My Playlist to learn English! <i class="fa-solid fa-headphones"></i></h1>
+  <header>
+    <h1>My Playlist to learn English! <i class="fa-solid fa-headphones"></i></h1>
+  </header>
 
-  <ul id="playlist"></ul>
-  <audio id="audioPlayer" controls></audio>
+  <main>
+    <section>
+      <ul id="playlist"></ul>
+      <audio id="audioPlayer" controls></audio>
 
-  <div class="controls">
-    <button id="prevBtn">Previous<i class="fa-solid fa-backward"></i></button>
-    <button id="nextBtn">Next <i class="fa-solid fa-forward"></i></button>
-  </div>
+      <nav class="controls">
+        <button id="prevBtn">Previous<i class="fa-solid fa-backward"></i></button>
+        <button id="nextBtn">Next <i class="fa-solid fa-forward"></i></button>
+      </nav>
 
-  <p id="calculateTotalPlaylistDuration">
-    Sua playlist tem esse total de minutos!
-    <i class="fa-solid fa-clock" aria-hidden="true" title="relógio"></i>
-  </p>
+      <aside id="calculateTotalPlaylistDuration">
+        Sua playlist tem esse total de minutos!
+        <i class="fa-solid fa-clock" aria-hidden="true" title="relógio"></i>
+      </aside>
+    </section>
 
-  <div class="txt">
-    <h2>Text to read while listening</h2>
-    <ul id="textlist"></ul>
-  </div>
+    <section class="txt">
+      <h2>Text to read while listening</h2>
+      <ul id="textlist"></ul>
+    </section>
+  </main>
 
   <script src="js/script.js"></script>   
 </body>

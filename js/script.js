@@ -10,18 +10,7 @@ const tracks = [
   { name: "Antonio Canova", file: "audios/7_Antonio Canova Peter Complete Audio.mp3" },
   { name: "Why Cats and Dogs are Enemies", file: "audios/8_Why Cats and Dogs are Enemies Peter Complete Audio.mp3" },
   { name: "Lost and Found", file: "audios/9_Lost and Found Peter Complete Audio.mp3"},
-  { name: "Steve Jobs Commencement 1", file: "audios/10_AUDIO Steve Jobs Commencement Address 01.mp3" },
-  { name: "Steve Jobs Commencement 2", file: "audios/11_AUDIO Steve Jobs Commencement Address 02.mp3" },
-  { name: "Steve Jobs Commencement 3", file: "audios/12_AUDIO Steve Jobs Commencement Address 03.mp3" },
-  { name: "Steve Jobs Commencement 4", file: "audios/13_AUDIO Steve Jobs Commencement Address 04.mp3" },
-  { name: "Steve Jobs Commencement 5", file: "audios/14_AUDIO Steve Jobs Commencement Address 05.mp3" },
-  { name: "Steve Jobs Commencement 6", file: "audios/15_AUDIO Steve Jobs Commencement Address 06.mp3" },
-  { name: "Steve Jobs Commencement 7", file: "audios/16_AUDIO Steve Jobs Commencement Address 07.mp3" },
-  { name: "Steve Jobs Commencement 8", file: "audios/17_AUDIO Steve Jobs Commencement Address 08.mp3" },
-  { name: "Steve Jobs Commencement 9", file: "audios/18_AUDIO Steve Jobs Commencement Address 09.mp3" },
-  { name: "Steve Jobs Commencement 10", file: "audios/19_AUDIO Steve Jobs Commencement Address 10.mp3" },
-  { name: "Steve Jobs Commencement 11", file: "audios/20_AUDIO Steve Jobs Commencement Address 11.mp3" },
-  { name: "Steve Jobs Commencement 12", file: "audios/21_AUDIO Steve Jobs Commencement Address 12.mp3" }
+  { name: "Steve Jobs Commencement Address", file: "audios/10_Steve Jobs Commencement Address.mp3" }
 ];
 
 /*const jackHannafordTranscript = [
@@ -135,7 +124,7 @@ const tracks = [
 ];
 */
 
-const boyFlewTooHighTranscript = [
+/*const boyFlewTooHighTranscript = [
   { start: 0, end: 6, text: "The underground paths housing the Minotaur beneath the isle of Crete were created by the dangerous and intelligent mind of Daedalus, an artist of design and construction." },
   { start: 7, end: 10, text: "Daedalus was so brilliant that King Minos of Crete kept him as a prisoner." },
   { start: 11, end: 15, text: "Daedalus lived with his son Icarus in a tower of the palace, and King Minos made him build tremendous weapons of war." },
@@ -171,8 +160,9 @@ const boyFlewTooHighTranscript = [
   { start: 155, end: 158, text: "Gradually his wings began to lose their shape, and some of the feathers even fell off." },
   { start: 159, end: 163, text: "Icarus quickly moved his arms with worry and frenzy, but it was too late. He had lost the power of flight, and down he fell with force into the sea." }
 ];
+*/
 
-const bellOfAtriTranscript = [
+/*const bellOfAtriTranscript = [
   { start: 0, end: 4, text: "In the old Italian town of Atri, the King bought a fine, large bell and hung it in the marketplace tower." },
   { start: 5, end: 8, text: "A long rope that reached the ground was attached to the bell." },
   { start: 9, end: 11, text: "The smallest child could ring the bell by pulling the rope." },
@@ -218,8 +208,9 @@ const bellOfAtriTranscript = [
   { start: 162, end: 164, text: "The mean old Knight hung his head, angry to have lost his gold, but the people shouted with joy." },
   { start: 165, end: 168, text: "The Loyal Horse was led to his new stable and had a dinner fit for a brave and Loyal Horse." }
 ];
+*/
 
-const GodilocksAndTheThreeBearsTranscript = [
+/*const GodilocksAndTheThreeBearsTranscript = [
   { start: 0, end: 5, text: "Once upon a time, there were three bears, who lived in a house of their own deep in a forest." },
   { start: 6, end: 10, text: "One of them was a Little Bear, one a Medium-sized Bear, and one a Big Bear." },
   { start: 11, end: 16, text: "They had each a bowl for their porridge: a small bowl, a medium-sized bowl, and a great bowl." },
@@ -263,6 +254,7 @@ const GodilocksAndTheThreeBearsTranscript = [
   { start: 204, end: 209, text: "No one can say whether she ran into the deep forest and was lost or found her way home and got whipped for being a bad girl." },
   { start: 210, end: 213, text: "The three bears never heard about her again and they lived happily ever after." }
 ];
+*/
 
 const antonioCanovaTranscript = [
   { start: 0, end: 4, text: "Long ago in Italy, there lived a child named Antonio Canova." },
