@@ -1,5 +1,3 @@
-// 🔹 Liste seus áudios aqui (deixe os arquivos na mesma pasta do HTML)
-
 const tracks = [
   //{ name: "Jack Hannaford", file: "audios/1_Jack Hannaford Natalie Complete Audio.mp3" },
   //{ name: "The Endless Tale", file: "audios/2_The Endless Tale Natalie Complete Audio.mp3" },
@@ -10,7 +8,8 @@ const tracks = [
   { name: "Antonio Canova", file: "audios/7_Antonio Canova Peter Complete Audio.mp3" },
   { name: "Why Cats and Dogs are Enemies", file: "audios/8_Why Cats and Dogs are Enemies Peter Complete Audio.mp3" },
   { name: "Lost and Found", file: "audios/9_Lost and Found Peter Complete Audio.mp3"},
-  { name: "Steve Jobs Commencement Address", file: "audios/10_Steve Jobs Commencement Address.mp3" }
+  { name: "Steve Jobs Commencement Address", file: "audios/10_Steve Jobs Commencement Address.mp3" },
+  { name: "A Change in Routine", file: "audios/11_AUDIO A Change in Routine 01 Josh.mp3" }
 ];
 
 /*const jackHannafordTranscript = [
@@ -354,12 +353,12 @@ const audioPlayer = document.getElementById("audioPlayer");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
-// Chama a função para calcular o tempo total quando a página carregar
+
 document.addEventListener("DOMContentLoaded", calculateTotalPlaylistDuration);
 
 let currentIndex = 0;
 
-// Montar lista
+
 tracks.forEach((track, index) => {
   const li = document.createElement("li");
   li.textContent = track.name;
@@ -406,7 +405,6 @@ nextBtn.addEventListener("click", () => {
   }
 });
 
-// Passa automático para a próxima
 audioPlayer.addEventListener("ended", () => {
   if (currentIndex < tracks.length - 1) {
     playTrack(currentIndex + 1);
@@ -428,7 +426,7 @@ function showTranscript(transcript) {
   });
 }
 
-// Atualiza destaque enquanto toca
+
 audioPlayer.addEventListener("timeupdate", () => {
   const current = audioPlayer.currentTime;
   [...textlist.children].forEach(li => {
@@ -438,7 +436,7 @@ audioPlayer.addEventListener("timeupdate", () => {
   });
 });
 
-// Função para calcular o tempo total da playlist
+
 function calculateTotalPlaylistDuration() {
   let totalSeconds = 0;
   const durationElement = document.getElementById('calculateTotalPlaylistDuration');
@@ -472,7 +470,6 @@ function calculateTotalPlaylistDuration() {
   });
 }
 
-// Mensagem final
 function showEndMessage() {
   const msg = document.createElement("div");
   msg.textContent = "🎉 Parabéns! Você terminou sua prática de inglês por hoje!";
