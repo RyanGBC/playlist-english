@@ -9,7 +9,8 @@ const tracks = [
   { name: "Why Cats and Dogs are Enemies", file: "audios/8_Why Cats and Dogs are Enemies Peter Complete Audio.mp3" },
   { name: "Lost and Found", file: "audios/9_Lost and Found Peter Complete Audio.mp3"},
   { name: "Steve Jobs Commencement Address", file: "audios/10_Steve Jobs Commencement Address.mp3" },
-  { name: "A Change in Routine", file: "audios/11_AUDIO A Change in Routine 01 Josh.mp3" }
+  { name: "A Change in Routine 1", file: "audios/11_AUDIO A Change in Routine 01 Josh.mp3" },
+  { name: "A Change in Routine 2", file: "audios/12_AUDIO A Change in Routine 02 Josh.mp3" }
 ];
 
 /*const jackHannafordTranscript = [
