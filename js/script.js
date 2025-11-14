@@ -5,12 +5,13 @@ const tracks = [
   //{ name: "The Boy Who Flew Too High", file: "audios/4_The Boy who Flew too High Natalie Complete Audio.mp3" },
   //{ name: "The Bell of Atri", file: "audios/5_The Bell of Atri Kathy Complete Audio.mp3" },
   //{ name: "Goldilocks and the Three Bears",file:"audios/6_Goldilocks and the Three Bears Peter Audio Completo.mp3"},
-  { name: "Antonio Canova", file: "audios/7_Antonio Canova Peter Complete Audio.mp3" },
+  //{ name: "Antonio Canova", file: "audios/7_Antonio Canova Peter Complete Audio.mp3" },
   { name: "Why Cats and Dogs are Enemies", file: "audios/8_Why Cats and Dogs are Enemies Peter Complete Audio.mp3" },
   { name: "Lost and Found", file: "audios/9_Lost and Found Peter Complete Audio.mp3"},
   { name: "Steve Jobs Commencement Address", file: "audios/10_Steve Jobs Commencement Address.mp3" },
   { name: "A Change in Routine 1", file: "audios/11_AUDIO A Change in Routine 01 Josh.mp3" },
-  { name: "A Change in Routine 2", file: "audios/12_AUDIO A Change in Routine 02 Josh.mp3" }
+  { name: "A Change in Routine 2", file: "audios/12_AUDIO A Change in Routine 02 Josh.mp3" },
+  { name: "A Change in Routine 3", file: "audios/13_AUDIO A Change in Routine 03 Josh.mp3" }
 ];
 
 /*const jackHannafordTranscript = [
