@@ -13,7 +13,8 @@ const tracks = [
   { name: "A Change in Routine 2", file: "audios/12_AUDIO A Change in Routine 02 Josh.mp3" },
   { name: "A Change in Routine 3", file: "audios/13_AUDIO A Change in Routine 03 Josh.mp3" },
   { name: "A Change in Routine 4", file: "audios/14_AUDIO A Change in Routine 04 Josh.mp3" },
-  { name: "A Change in Routine 5", file: "audios/15_AUDIO A Change in Routine 05 Josh.mp3" }
+  { name: "A Change in Routine 5", file: "audios/15_AUDIO A Change in Routine 05 Josh.mp3" },
+  { name: "A Change in Routine 6", file: "audios/16_AUDIO A Change in Routine 06 Josh.mp3" }
 ];
 
 /*const jackHannafordTranscript = [
