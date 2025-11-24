@@ -9,14 +9,7 @@ const tracks = [
   //{ name: "Why Cats and Dogs are Enemies", file: "audios/8_Why Cats and Dogs are Enemies Peter Complete Audio.mp3" },
   { name: "Lost and Found", file: "audios/9_Lost and Found Peter Complete Audio.mp3"},
   { name: "Steve Jobs Commencement Address", file: "audios/10_Steve Jobs Commencement Address.mp3" },
-  { name: "A Change in Routine 1", file: "audios/11_AUDIO A Change in Routine 01 Josh.mp3" },
-  { name: "A Change in Routine 2", file: "audios/12_AUDIO A Change in Routine 02 Josh.mp3" },
-  { name: "A Change in Routine 3", file: "audios/13_AUDIO A Change in Routine 03 Josh.mp3" },
-  { name: "A Change in Routine 4", file: "audios/14_AUDIO A Change in Routine 04 Josh.mp3" },
-  { name: "A Change in Routine 5", file: "audios/15_AUDIO A Change in Routine 05 Josh.mp3" },
-  { name: "A Change in Routine 6", file: "audios/16_AUDIO A Change in Routine 06 Josh.mp3" },
-  { name: "A Change in Routine 7", file: "audios/17_AUDIO A Change in Routine 07 Josh.mp3" },
-  { name: "A Change in Routine 8", file: "audios/18_AUDIO A Change in Routine 08 Josh.mp3" }
+  { name: "A Change in Routine", file: "audios/11_AUDIO COMPLETO A Change in Routine Josh.mp3" }
 ];
 
 /*const jackHannafordTranscript = [
