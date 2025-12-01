@@ -13,7 +13,8 @@ const tracks = [
   { name: "Hills like white elephants 1", file: "audios/12_AUDIO Hills Like White Elephants 01 Jacob.mp3" },
   { name: "Hills like white elephants 2", file: "audios/13_AUDIO Hills Like White Elephants 02 Jacob.mp3" },
   { name: "Hills like white elephants 3", file: "audios/14_AUDIO Hills Like White Elephants 03 Jacob.mp3" },
-  { name: "Hills like white elephants 4", file: "audios/15_AUDIO Hills Like White Elephants 05 Jacob.mp3" }
+  { name: "Hills like white elephants 4", file: "audios/15_AUDIO Hills Like White Elephants 04 Jacob.mp3" },
+  { name: "Hills like white elephants 5", file: "audios/16_AUDIO Hills Like White Elephants 05 Jacob.mp3" }
 ];
 
 /*const jackHannafordTranscript = [
