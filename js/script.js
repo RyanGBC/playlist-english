@@ -7,7 +7,7 @@ const tracks = [
   //{ name: "Goldilocks and the Three Bears",file:"audios/6_Goldilocks and the Three Bears Peter Audio Completo.mp3"},
   //{ name: "Antonio Canova", file: "audios/7_Antonio Canova Peter Complete Audio.mp3" },
   //{ name: "Why Cats and Dogs are Enemies", file: "audios/8_Why Cats and Dogs are Enemies Peter Complete Audio.mp3" },
-  { name: "Lost and Found", file: "audios/9_Lost and Found Peter Complete Audio.mp3"},
+  //{ name: "Lost and Found", file: "audios/9_Lost and Found Peter Complete Audio.mp3"},
   { name: "Steve Jobs Commencement Address", file: "audios/10_Steve Jobs Commencement Address.mp3" },
   { name: "A Change in Routine", file: "audios/11_AUDIO COMPLETO A Change in Routine Josh.mp3" },
   { name: "Hills like white elephants 1", file: "audios/12_AUDIO Hills Like White Elephants 01 Jacob.mp3" },
