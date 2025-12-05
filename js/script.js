@@ -10,14 +10,7 @@ const tracks = [
   //{ name: "Lost and Found", file: "audios/9_Lost and Found Peter Complete Audio.mp3"},
   { name: "Steve Jobs Commencement Address", file: "audios/10_Steve Jobs Commencement Address.mp3" },
   { name: "A Change in Routine", file: "audios/11_AUDIO COMPLETO A Change in Routine Josh.mp3" },
-  { name: "Hills like white elephants 1", file: "audios/12_AUDIO Hills Like White Elephants 01 Jacob.mp3" },
-  { name: "Hills like white elephants 2", file: "audios/13_AUDIO Hills Like White Elephants 02 Jacob.mp3" },
-  { name: "Hills like white elephants 3", file: "audios/14_AUDIO Hills Like White Elephants 03 Jacob.mp3" },
-  { name: "Hills like white elephants 4", file: "audios/15_AUDIO Hills Like White Elephants 04 Jacob.mp3" },
-  { name: "Hills like white elephants 5", file: "audios/16_AUDIO Hills Like White Elephants 05 Jacob.mp3" },
-  { name: "Hills like white elephants 6", file: "audios/17_AUDIO Hills Like White Elephants 06 Jacob.mp3" },
-  { name: "Hills like white elephants 7", file: "audios/18_AUDIO Hills Like White Elephants 07 Jacob.mp3" },
-  { name: "Hills like white elephants 8", file: "audios/19_AUDIO Hills Like White Elephants 08 Jacob.mp3" }
+  { name: "Hills like white elephants", file: "audios/12_AUDIO COMPLETO Hills Like White Elephants Jacob.mp3" }
 ];
 
 /*const jackHannafordTranscript = [
