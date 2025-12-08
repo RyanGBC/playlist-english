@@ -10,7 +10,8 @@ const tracks = [
   //{ name: "Lost and Found", file: "audios/9_Lost and Found Peter Complete Audio.mp3"},
   { name: "Steve Jobs Commencement Address", file: "audios/10_Steve Jobs Commencement Address.mp3" },
   { name: "A Change in Routine", file: "audios/11_AUDIO COMPLETO A Change in Routine Josh.mp3" },
-  { name: "Hills like white elephants", file: "audios/12_AUDIO COMPLETO Hills Like White Elephants Jacob.mp3" }
+  { name: "Hills like white elephants", file: "audios/12_AUDIO COMPLETO Hills Like White Elephants Jacob.mp3" },
+  { name: "The Red Bandits of Montgomery", file: "audios/13_AUDIO The Red Bandits of Montgomery 01 Jacob.mp3" }
 ];
 
 /*const jackHannafordTranscript = [
