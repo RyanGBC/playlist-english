@@ -9,14 +9,9 @@ const tracks = [
   //{ name: "Why Cats and Dogs are Enemies", file: "audios/8_Why Cats and Dogs are Enemies Peter Complete Audio.mp3" },
   //{ name: "Lost and Found", file: "audios/9_Lost and Found Peter Complete Audio.mp3"},
   { name: "Steve Jobs Commencement Address", file: "audios/10_Steve Jobs Commencement Address.mp3" },
-  { name: "A Change in Routine", file: "audios/11_AUDIO COMPLETO A Change in Routine Josh.mp3" },
+  //{ name: "A Change in Routine", file: "audios/11_AUDIO COMPLETO A Change in Routine Josh.mp3" },
   { name: "Hills like white elephants", file: "audios/12_AUDIO COMPLETO Hills Like White Elephants Jacob.mp3" },
-  { name: "The Red Bandits of Montgomery 1", file: "audios/13_AUDIO The Red Bandits of Montgomery 01 Jacob.mp3" },
-  { name: "The Red Bandits of Montgomery 2", file: "audios/14_AUDIO The Red Bandits of Montgomery 02 Jacob.mp3" },
-  { name: "The Red Bandits of Montgomery 3", file: "audios/15_AUDIO The Red Bandits of Montgomery 03 Jacob.mp3" },
-  { name: "The Red Bandits of Montgomery 4", file: "audios/16_AUDIO The Red Bandits of Montgomery 04 Jacob.mp3" },
-  { name: "The Red Bandits of Montgomery 5", file: "audios/17_AUDIO The Red Bandits of Montgomery 05 Jacob.mp3" },
-  { name: "The Red Bandits of Montgomery 6", file: "audios/18_AUDIO The Red Bandits of Montgomery 06 Jacob.mp3" }
+  { name: "The Red Bandits of Montgomery", file: "audios/13_AUDIO COMPLETO The Red Bandits of Montgomery Jacob.mp3" }
 ];
 
 /*const jackHannafordTranscript = [
